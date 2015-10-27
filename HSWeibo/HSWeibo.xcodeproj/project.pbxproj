@@ -11,6 +11,8 @@
 		FC75D2311BDF7A620039E647 /* HSMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75D2301BDF7A620039E647 /* HSMessageTableViewController.swift */; };
 		FC75D2331BDF7A9A0039E647 /* HSDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75D2321BDF7A9A0039E647 /* HSDiscoverTableViewController.swift */; };
 		FC75D2351BDF7AC30039E647 /* HSProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75D2341BDF7AC30039E647 /* HSProfileTableViewController.swift */; };
+		FC85BAD11BDFC9AA00455BE6 /* HSBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85BAD01BDFC9AA00455BE6 /* HSBaseTableViewController.swift */; };
+		FC85BAD31BDFCB0F00455BE6 /* HSVistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85BAD21BDFCB0F00455BE6 /* HSVistorView.swift */; };
 		FCF53EDC1BDF58E4002F0E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF53EDB1BDF58E3002F0E2E /* AppDelegate.swift */; };
 		FCF53EE31BDF58E4002F0E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF53EE21BDF58E4002F0E2E /* Assets.xcassets */; };
 		FCF53F081BDF6FEC002F0E2E /* HSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF53F071BDF6FEC002F0E2E /* HSMainViewController.swift */; };
@@ -21,6 +23,8 @@
 		FC75D2301BDF7A620039E647 /* HSMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSMessageTableViewController.swift; sourceTree = "<group>"; };
 		FC75D2321BDF7A9A0039E647 /* HSDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSDiscoverTableViewController.swift; sourceTree = "<group>"; };
 		FC75D2341BDF7AC30039E647 /* HSProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSProfileTableViewController.swift; sourceTree = "<group>"; };
+		FC85BAD01BDFC9AA00455BE6 /* HSBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSBaseTableViewController.swift; sourceTree = "<group>"; };
+		FC85BAD21BDFCB0F00455BE6 /* HSVistorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSVistorView.swift; sourceTree = "<group>"; };
 		FCF53ED81BDF58E3002F0E2E /* HSWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF53EDB1BDF58E3002F0E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCF53EE21BDF58E4002F0E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				FCF53F071BDF6FEC002F0E2E /* HSMainViewController.swift */,
+				FC85BAD01BDFC9AA00455BE6 /* HSBaseTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 		FCF53EFD1BDF6055002F0E2E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC85BAD21BDFCB0F00455BE6 /* HSVistorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -358,7 +364,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC85BAD11BDFC9AA00455BE6 /* HSBaseTableViewController.swift in Sources */,
 				FC75D2351BDF7AC30039E647 /* HSProfileTableViewController.swift in Sources */,
+				FC85BAD31BDFCB0F00455BE6 /* HSVistorView.swift in Sources */,
 				FC75D2311BDF7A620039E647 /* HSMessageTableViewController.swift in Sources */,
 				FCF53F081BDF6FEC002F0E2E /* HSMainViewController.swift in Sources */,
 				FC75D22F1BDF7A260039E647 /* HSHomeTableViewController.swift in Sources */,
