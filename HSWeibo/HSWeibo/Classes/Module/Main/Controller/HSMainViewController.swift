@@ -34,9 +34,11 @@ class HSMainViewController: UITabBarController {
         let vc = UIViewController()
         self.addChildViewController(vc, title: "", imageName: "f")
         
+        //发现
         let discoverVC = HSDiscoverTableViewController()
         self.addChildViewController(discoverVC, title: "发现", imageName: "tabbar_discover")
         
+        //我
         let profileVC = HSProfileTableViewController()
         self.addChildViewController(profileVC, title: "我", imageName: "tabbar_profile")
     }

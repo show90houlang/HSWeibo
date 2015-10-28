@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC390B311BE10797000CFC2B /* HSOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC390B301BE10797000CFC2B /* HSOauthViewController.swift */; };
 		FC75D22F1BDF7A260039E647 /* HSHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75D22E1BDF7A260039E647 /* HSHomeTableViewController.swift */; };
 		FC75D2311BDF7A620039E647 /* HSMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75D2301BDF7A620039E647 /* HSMessageTableViewController.swift */; };
 		FC75D2331BDF7A9A0039E647 /* HSDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75D2321BDF7A9A0039E647 /* HSDiscoverTableViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC390B301BE10797000CFC2B /* HSOauthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSOauthViewController.swift; sourceTree = "<group>"; };
 		FC75D22E1BDF7A260039E647 /* HSHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHomeTableViewController.swift; sourceTree = "<group>"; };
 		FC75D2301BDF7A620039E647 /* HSMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSMessageTableViewController.swift; sourceTree = "<group>"; };
 		FC75D2321BDF7A9A0039E647 /* HSDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSDiscoverTableViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC390B2E1BE1075B000CFC2B /* Oauth(授权) */ = {
+			isa = PBXGroup;
+			children = (
+				FC390B2F1BE1075B000CFC2B /* Controller */,
+			);
+			name = "Oauth(授权)";
+			path = Oauth;
+			sourceTree = "<group>";
+		};
+		FC390B2F1BE1075B000CFC2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC390B301BE10797000CFC2B /* HSOauthViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FCF53ECF1BDF58E3002F0E2E = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +128,7 @@
 		FCF53EF11BDF6055002F0E2E /* Module(模块) */ = {
 			isa = PBXGroup;
 			children = (
+				FC390B2E1BE1075B000CFC2B /* Oauth(授权) */,
 				FCF53EFA1BDF6055002F0E2E /* Main(主要的) */,
 				FCF53EF61BDF6055002F0E2E /* Home(首页) */,
 				FCF53EFE1BDF6055002F0E2E /* Message(消息) */,
@@ -364,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC390B311BE10797000CFC2B /* HSOauthViewController.swift in Sources */,
 				FC85BAD11BDFC9AA00455BE6 /* HSBaseTableViewController.swift in Sources */,
 				FC75D2351BDF7AC30039E647 /* HSProfileTableViewController.swift in Sources */,
 				FC85BAD31BDFCB0F00455BE6 /* HSVistorView.swift in Sources */,

@@ -18,11 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //创建window对象
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        //创建主视图控制器（tabBarController）
         let tabBar = HSMainViewController()
+        
+        //设置window根控制器为主视图控制器（tabBarController）
         self.window?.rootViewController = tabBar
+        
+        //设为主窗口并显示
         self.window?.makeKeyAndVisible()
 
         return true
+    }
+    
+    ///设置全局导航栏样式
+    private func setupAppearance(){
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
     }
 
 }
