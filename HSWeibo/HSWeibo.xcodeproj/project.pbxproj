@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511D23F4C24F5F126C6AD1A1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAF0C0AF7B9053218C77008 /* Pods.framework */; };
 		FC390B311BE10797000CFC2B /* HSOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC390B301BE10797000CFC2B /* HSOauthViewController.swift */; };
 		FC75D22F1BDF7A260039E647 /* HSHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75D22E1BDF7A260039E647 /* HSHomeTableViewController.swift */; };
 		FC75D2311BDF7A620039E647 /* HSMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75D2301BDF7A620039E647 /* HSMessageTableViewController.swift */; };
@@ -20,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AAF0C0AF7B9053218C77008 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF539E308E6F77F60BBEB08E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CB09B477818791B4FB1E91A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC390B301BE10797000CFC2B /* HSOauthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSOauthViewController.swift; sourceTree = "<group>"; };
 		FC75D22E1BDF7A260039E647 /* HSHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHomeTableViewController.swift; sourceTree = "<group>"; };
 		FC75D2301BDF7A620039E647 /* HSMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSMessageTableViewController.swift; sourceTree = "<group>"; };
@@ -39,12 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511D23F4C24F5F126C6AD1A1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F70A2491011C1262094B3F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB09B477818791B4FB1E91A7 /* Pods.debug.xcconfig */,
+				BF539E308E6F77F60BBEB08E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C02672E5DB96E6E10019B5F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AAF0C0AF7B9053218C77008 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC390B2E1BE1075B000CFC2B /* Oauth(授权) */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +89,8 @@
 			children = (
 				FCF53EDA1BDF58E3002F0E2E /* HSWeibo */,
 				FCF53ED91BDF58E3002F0E2E /* Products */,
+				3F70A2491011C1262094B3F8 /* Pods */,
+				C02672E5DB96E6E10019B5F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -321,9 +345,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCF53EEA1BDF58E4002F0E2E /* Build configuration list for PBXNativeTarget "HSWeibo" */;
 			buildPhases = (
+				4A9DB3E1397BDF94984DCC0C /* Check Pods Manifest.lock */,
 				FCF53ED41BDF58E3002F0E2E /* Sources */,
 				FCF53ED51BDF58E3002F0E2E /* Frameworks */,
 				FCF53ED61BDF58E3002F0E2E /* Resources */,
+				14867E1A867676B863CE5D25 /* Embed Pods Frameworks */,
+				0EA53D29DFC58ABF739BA71D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -378,6 +405,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA53D29DFC58ABF739BA71D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14867E1A867676B863CE5D25 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9DB3E1397BDF94984DCC0C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCF53ED41BDF58E3002F0E2E /* Sources */ = {
@@ -482,6 +557,7 @@
 		};
 		FCF53EEB1BDF58E4002F0E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB09B477818791B4FB1E91A7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -495,6 +571,7 @@
 		};
 		FCF53EEC1BDF58E4002F0E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF539E308E6F77F60BBEB08E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
